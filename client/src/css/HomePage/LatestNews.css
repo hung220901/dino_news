@@ -1,0 +1,34 @@
+
+/* LATES NEWS */
+.category-title{
+    margin: 0 5%;
+  }
+  
+.lates-news{
+    margin: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+  
+  /* NEWS CARD */
+  .news-card{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .image-news{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 16px;
+    
+  }
+  
+  
+  .news-title{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
