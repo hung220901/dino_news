@@ -2,7 +2,8 @@ const Post = require('../models/Post');
 
 exports.getAllPosts = async(req, res, next)=>{
     try{
-        const posts = await Post.find({}).populate('author','name').select('content createAt');
+        
+        const posts = await Post.find({}).populate('author','name');
         res.status(200).json({
             status:'success',
             results: posts.length,
@@ -16,7 +17,7 @@ exports.getAllPosts = async(req, res, next)=>{
 exports.createOnePost = async(req, res, next)=>{
     try{
         const {userId} = req.user;
-        const post = await Post.create({...req.body ,author:userId});
+        const post = await Post.create({...req.body,author:userId});
         res.status(200).json({
             status:'success',
             data:{post}

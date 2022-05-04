@@ -44,3 +44,21 @@
     margin: 2% 0;
   }
   
+  .social__icon__footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .item__social__icon__footer{
+    width: 50px;
+    height: 50px;
+  }
+  .fb__icon{
+    color: #4267B2;
+  }
+  .tw__icon{
+    color: 	#1DA1F2;
+  }
+  .yt__icon{
+    color: red;
+  }

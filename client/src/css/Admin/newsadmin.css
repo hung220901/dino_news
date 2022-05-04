@@ -1,0 +1,102 @@
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table td,
+  .table th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+
+  }
+  .limit__text__display{
+    white-space: nowrap;
+	  overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 150px;
+  }
+  
+  .table th {
+    background-color: black;
+    color: #ffffff;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: rgb(168, 212, 231);
+  }
+  
+  /*responsive*/
+  
+  @media (max-width: 500px) {
+    .table thead {
+      display: none;
+    }
+  
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+      display: block;
+      width: 100%;
+    }
+    .table tr {
+      margin-bottom: 15px;
+    }
+    .table td {
+      padding-left: 50%;
+      text-align: left;
+      position: relative;
+    }
+    .table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  .container__box__content__admin{
+    margin-top: 85px;
+    margin-left:5%;
+    padding: 2rem 2rem;
+    min-height: calc(100vh - 90px);
+}
+
+.btn__edit__admin{
+  background-color: rgb(10, 194, 10);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: white;
+
+}
+.btn__delete__admin{
+  margin-left: 0.5rem;
+  background-color: red;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: white;
+}
+
+.create__new__post___box{
+  margin: 3% 0;
+}
+
+.btn__create__new__post{
+  background-color: rgb(39, 121, 228);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: white;
+}
+.btn__edit__admin:hover, .btn__delete__admin:hover{
+  transform: scale(1.2);
+}
